@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HealthWise Diagnostic Center</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+        <style>
+          body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+          }
+      
+          header {
+            background-color: transparent;
+            color: black;
+            padding: 20px;
+            text-align: center;
+
+}
+      
+          nav {
+            background-color: grey;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+          }
+      
+          section {
+            padding: 50px;
+            text-align: center;
+          }
+      
+          footer {
+            background-color: #808080;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+          }
+      
+          a {
+            color: black;
+            text-decoration: none;
+          }
+      
+            /* For test page */
+          .finance-box {
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+          padding: 20px;
+          margin-bottom: 20px;
+          background-color: grey;
+          }
+      
+          .finance-box-header {
+          border-bottom: 1px solid #ccc;
+          margin-bottom: 10px;
+          padding-bottom: 10px;
+          }
+      
+          .finance-box-header h2 {
+          margin: 0;
+          font-size: 24px;
+          }
+      
+          .finance-box-body ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          }
+      
+          .finance-box-body ul li {
+          margin-bottom: 10px;
+          }
+      
+          .finance-box-body ul li a {
+          color: #333;
+          text-decoration: none;
+          font-weight: bold;
+          }
+      
+          .finance-box-footer {
+          margin-top: 10px;
+          text-align: right;
+          }
+      
+          .finance-box-footer .more-link {
+          color: #333;
+          text-decoration: none;
+          }
+      
+          .finance-box-footer .more-link:hover {
+          text-decoration: underline;
+          }
+          #about {
+          /* background-color: #f8f8f8; */
+          padding: 100px 0;
+          }
+      
+          #about h2 {
+          font-size: 36px;
+          font-weight: 700;
+          margin-bottom: 30px;
+          }
+      
+          #about p {
+          font-size: 18px;
+          line-height: 1.6;
+          margin-bottom: 30px;
+          text-align: justify;
+          }
+      
+          #about img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 5px;
+          }
+      
+          /* Iframe */
+          .map-container {
+          position: relative;
+          padding-bottom: 56.25%;
+          height: 0;
+          overflow: hidden;
+          }
+      
+          .map-container iframe,
+          .map-container object,
+          .map-container embed {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          }
+      
+          /* CARD */
+          .card {
+              display: inline-block;
+              width: 300px;
+              border: 2px solid #ccc;
+              border-radius: 5px;
+              padding: 20px;
+              margin: 10px;
+              box-shadow: 5px 5px 10px #ccc;
+            }
+      
+            .card h2 {
+              font-size: 24px;
+              margin-top: 0;
+            }
+      
+            .card p {
+              font-size: 18px;
+            }
+      
+            .card .price {
+              font-size: 36px;
+              font-weight: bold;
+              margin-bottom: 20px;
+            }
+      
+            .card button {
+              background-color: grey;
+              color: white;
+              border: none;
+              padding: 10px 20px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              border-radius: 5px;
+              cursor: pointer;
+              transition: background-color 0.3s;
+            }
+      
+            .card button:hover {
+              background-color: grey;
+            }
+        </style>
+      </head>
+<body background="Images/backgroundimage.jpg"> 
+
+    <header>
+        <h1>HealthWise Diagnostic Center</h1>
+      </header>
+    
+      <nav>|
+        <a href="#about">About</a> |
+        <a href="#services">Services</a> |
+
+        <a href="#contact">Contact</a> |
+    
+      </nav>
+    
+      <section id="about">
+        <div class="container">
+          <div class="row">
+    
+              <h2>About Us</h2>
+              <p>HealthWise Diagnostic Center is a state-of-the-art healthcare facility that specializes in providing advanced diagnostic services to patients. The center is equipped with the latest medical technology and staffed by a team of highly trained professionals, including radiologists, pathologists, and other medical specialists.
+
+                At HealthWise Diagnostic Center, we believe that accurate and timely diagnosis is the key to effective treatment and recovery. That's why we offer a comprehensive range of diagnostic services, including imaging tests such as X-rays, ultrasounds, CT scans, and MRI scans, as well as laboratory tests such as blood tests and urinalysis.
+                
+                Our commitment to quality and excellence is evident in every aspect of our services. We use only the most advanced equipment and technologies, and our staff is dedicated to providing compassionate care and personalized attention to each and every patient. Whether you're coming in for a routine check-up or a more complex diagnostic procedure, you can rest assured that you're in good hands at HealthWise Diagnostic Center.</p>
+    
+          </div>
+        </div>
+      </section>
+      
+      
+    
+    
+    
+    
+      <section id="services">
+        <h2>Our Services</h2><br><br>
+        
+      
+        <div class="card">
+          <h2>Radiology and Imaging</h2>
+          <p>HealthWise Diagnostic Center can offer a range of cardiology services, including electrocardiograms (ECGs), echocardiograms, and stress tests to diagnose and treat heart conditions.</p>
+          <div class="price">50 ETH/year</div>
+          <button>Buy</button>
+        </div>
+    
+        <div class="card">
+          <h2>Laboratory</h2>
+          <p>The center can offer a comprehensive range of laboratory services, including blood tests, urine tests, stool tests, and other diagnostic tests to identify various medical conditions.</p>
+          <div class="price">100 ETH/year</div>
+          <button>Buy</button>
+        </div>
+      
+        <div class="card">
+          <h2>Endoscopy</h2>
+          <p> Offers endoscopy services to diagnose and treat conditions affecting the digestive system, including colonoscopies, upper gastrointestinal (GI) endoscopies, and flexible sigmoidoscopies.</p>
+          <div class="price">150 ETH/year</div>
+          <button>Buy</button>
+        </div>
+      </section>
+    
+    
+     
+      
+      
+      <section id="contact">
+        <h1>Contact Us</h1>
+          <p>For further queries, please contact us at <a style="color: black;" href="mailto:healthwise@gmail.com"><h4 style="color: #333;">healthwise@gmail.com</h4></a></p>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section>
+    <div id="readArea"> <!-- READING FROM CONTRACT -->
+        <button onclick="connectMetamask()">CONNECT TO METAMASK</button>
+        <p id="userArea">Status: Not connected to Metamask</p>
+         <!-- index html to meta-->
+
+        <button onclick="connectContract()">CONNECT TO CONTRACT</button>
+        <p id="contractArea">Status: Not connected to Contract</p>
+        <!-- meta to SC -->
+
+        <button onclick="getContractAccount()"> GET CONTRACT ACCOUNT </button>
+        <p id="contractAccount">Contract Account: Not Connected to Contract</p>
+        <!-- CAlling the function designed in Transactions.sol get deployment addresss -->
+
+        <button onclick="getBalanceApple()">GET BALANCE OF THE CONTRACT</button>
+        <p id="balanceArea">Balance: Not Connected to Contract</p>
+        <!-- CAlling the function designed in Transactions.sol get balance -->
+
+        
+    </div>
+
+    <div id="writeArea"><!-- WRITING TO CONTRACT -->
+        <button onclick="depositContract()">Send ether to the Contract</button><br>
+        <input type="number" id="depositInput" placeholder="Enter Amount"><br> <br>
+          <!-- Deposit to contract calling on deposit function -->
+
+        <button onclick="withdraw()">WITHDRAW ETHER TO ANY ADDRESS</button> <br>
+        <input type="text" id="addressInput" placeholder="Enter Address"> <br>
+        <input type="number" id="amountInput" placeholder="Enter Amount"> 
+                <!-- CAlling the function designed in Transactions.sol -->
+        <!-- calling the withdraw function -->
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script> // the below script code is convention in web3 in forming the communication with Web
+
+        let account;
+        const connectMetamask = async () => {
+            if(window.ethereum !== "undefined") {
+                const accounts = await ethereum.request({method: "eth_requestAccounts"});
+                account = accounts[0];
+                document.getElementById("userArea").innerHTML = `User Account: ${account}`;
+            }
+        }
+
+        const connectContract = async () => {
+            const ABI = [
+	{
+		"inputs": [],
+		"name": "deposit",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getAddress",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getBalance",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address payable",
+				"name": "_to",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			}
+		],
+		"name": "withdraw",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
+          
+            ;
+            const Address = "0x752ABE37633C0c3F613abe56be6E0de385F89CF2"; // Taking Address from Remix 
+            window.web3 = await new Web3(window.ethereum);
+            window.contract = await new window.web3.eth.Contract(ABI, Address);
+            document.getElementById("contractArea").innerHTML = "Connected to Contract"; // calling the elementID above
+        }
+
+        const getContractAccount = async () => {
+            const data = await window.contract.methods.getAddress().call();
+            document.getElementById("contractAccount").innerHTML = `Contract Account: ${data}`;
+        }
+
+        const getBalanceApple = async () => { // const getBalanceApple is the HTML function & .contract.getBalance is the smart contract function
+            const data = await window.contract.methods.getBalance().call();
+            document.getElementById("balanceArea").innerHTML = `Contract Balance: ${data}`;
+        }
+
+        const depositContract = async () => {
+            const amount = document.getElementById("depositInput").value;
+            await window.contract.methods.deposit().send({from: account, value: amount});
+        }
+
+        const withdraw = async () => {
+            const amount = document.getElementById("amountInput").value;
+            const address = document.getElementById("addressInput").value;
+            await window.contract.methods.withdraw(address, amount).send({from: account});
+        }
+
+    </script>
+    <footer>
+        <p>&copy; 2023 HealthWise Diagnostic Center Website.</p>
+      </footer>
+   
+</body>
+</html>
