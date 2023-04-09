@@ -228,21 +228,21 @@
           <h2>Radiology and Imaging</h2>
           <p>HealthWise Diagnostic Center can offer a range of cardiology services, including electrocardiograms (ECGs), echocardiograms, and stress tests to diagnose and treat heart conditions.</p>
           <div class="price">50 ETH/year</div>
-          <button>Buy</button>
+          <button onclick="setValue()">Buy</button>
         </div>
     
         <div class="card">
           <h2>Laboratory</h2>
           <p>The center can offer a comprehensive range of laboratory services, including blood tests, urine tests, stool tests, and other diagnostic tests to identify various medical conditions.</p>
           <div class="price">100 ETH/year</div>
-          <button>Buy</button>
+          <button onclick="setValue1()">Buy</button>
         </div>
       
         <div class="card">
           <h2>Endoscopy</h2>
           <p> Offers endoscopy services to diagnose and treat conditions affecting the digestive system, including colonoscopies, upper gastrointestinal (GI) endoscopies, and flexible sigmoidoscopies.</p>
           <div class="price">150 ETH/year</div>
-          <button>Buy</button>
+          <button onclick="setValue2()">Buy</button>
         </div>
       </section>
     
@@ -410,7 +410,18 @@
             const address = document.getElementById("addressInput").value;
             await window.contract.methods.withdraw(address, amount).send({from: account});
         }
+        function setValue() {
+  document.getElementById("depositInput").value = "50";
+}
 
+
+function setValue1() {
+  document.getElementById("depositInput").value = "100";
+}
+
+function setValue2() {
+  document.getElementById("depositInput").value = "150";
+}
     </script>
     <footer>
         <p>&copy; 2023 HealthWise Diagnostic Center Website.</p>
