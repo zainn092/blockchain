@@ -11,7 +11,7 @@ app.get("/Images/backgroundimage.jpg", (req, res) => {
 })
 // serving the index.html file 
 
-var POST = process.env.PORT || 5000:
+var PORT = process.env.PORT || 5000:
 const server = app.listen(PORT);
 const portNumber = server.address().port;
 console.log(`port: ${portNumber}`);
